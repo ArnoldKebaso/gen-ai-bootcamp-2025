@@ -43,6 +43,7 @@ Here is an example of simple sentence structures.
 - The children were playing outside. -> [Subject] [Verb] [Location].
 - She is reading a book. -> [Subject] [Verb] [Object].
 - Did they go to school today? -> [Interrogative] [Verb] [Subject] [Prepositional phrase] [Time-expression]?
+- She is reading a book. -> [Subject] [Verb] [Object].
 
 ### Clues and Considerations
 - Try and provide a non-nested bulleted list

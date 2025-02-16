@@ -12,6 +12,7 @@ Teaching instructions:
 - The table of vocabulary should only have the following columns: portuguese, English
 
 ## student Input: 
+
 Bears are at the door, did you leave the garbage out?
 
 ## Examples:
