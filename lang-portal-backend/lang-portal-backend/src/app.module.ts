@@ -1,10 +1,15 @@
+// src/app.module.ts
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { databaseConfig } from './config/database.config';
+import { Word } from './entities/word.entity';
+import { Group } from './entities/group.entity';
+import { StudyActivity } from './entities/study-activity.entity';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [
+    TypeOrmModule.forRoot(databaseConfig),
+    TypeOrmModule.forFeature([Word, Group, StudyActivity]),
+  ],
 })
 export class AppModule {}

@@ -25,7 +25,6 @@ export class Word {
     @Column({ default: 0 })
     wrong_count: number;
 
-    @ManyToMany(() => Group, group => group.words)
-    @JoinTable({ name: 'word_groups' })
-    groups: Group[];
-}
+    ManyToMany(() => Group, (group: Group) => group.words) // Add explicit type
+  @JoinTable({ name: 'word_groups' })
+  groups: Group[];
